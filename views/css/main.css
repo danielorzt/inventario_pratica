@@ -1,0 +1,102 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Contenedor del formulario */
+.login-container, .registro-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Encabezados */
+h2 {
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Inputs */
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+/* Botones */
+button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+/* Mensajes de error o éxito */
+#message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Ocultar elementos */
+.hidden {
+    display: none !important;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 767px) {
+    .login-container, .registro-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
